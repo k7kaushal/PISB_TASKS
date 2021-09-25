@@ -1,0 +1,85 @@
+html{
+    overflow-x: hidden;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.container{
+    background-image: url("./R.jpg");
+    width: 100vw;
+    align-content: center;
+    justify-content: space-between;
+    padding: 20% 30%;
+    display: flex;
+}
+input{
+    background-color: transparent;
+    font-size: 16px;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 10px 10px;
+    border: 0px;
+    border-bottom: 3px solid rgb(0, 255, 0, 0.5);
+}
+input::placeholder{
+    color: white;
+}
+#btn{
+    background-color: green;
+    color: honeydew;
+    border-radius: 6px;
+    box-shadow: rgb(0, 255, 0, 0.2);
+    padding: 5px;
+    cursor: pointer;
+}
+.login-part, .signup-part{
+    background: rgb(0, 0, 0, 0.5);
+    margin: 10px;
+    padding: 20px;
+    border:4px rgb(0, 100, 0, 0.2);
+    box-shadow: 2px black;
+    border-style: solid;
+}
+.input-box{
+    padding: 5px;
+}
+.btn-out{
+    padding: 20px;
+}
+.heading{
+    text-align: center;
+    color: white;
+}
+a{
+    color: yellow;
+}
+.text-bottom{
+    color: white;
+}
+.cover{
+    background-color: teal;
+}
+@media(max-width: 730px) {
+    .login-part{
+        display: none;
+    }
+    .signup-part{
+        width: 100%;
+    }
+    .container{
+        height: 100vh;
+        /* background-color: linear-gradient(green, teal); */
+        background-image: linear-gradient(green, teal);
+        padding: 27px;
+        align-items: center;
+        margin:  auto;
+    }
+    .cover{
+        background: none
+        
+    }
+}
